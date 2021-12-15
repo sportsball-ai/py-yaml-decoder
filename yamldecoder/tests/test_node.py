@@ -3,7 +3,7 @@ from typing import Optional
 
 import pytest
 
-from yaml_decoder.node import SequenceNode, new_node, MappingNode, ScalarNode
+from yamldecoder.node import SequenceNode, new_node, MappingNode, ScalarNode
 
 
 @dataclass
