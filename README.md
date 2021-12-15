@@ -9,7 +9,7 @@ This is similar to the way we do stuff in Go in the rest of our repositories.
 Run this commmand in any python project you are working on (as long as it uses pipenv):
 
 ```bash
-pipenv install pipenv install -e git+https://github.com/sportsball-ai/yaml-decoder.git@<commit-id>d#egg=yamldecoder
+pipenv install pipenv install -e git+https://github.com/sportsball-ai/py-yaml-decoder.git@<commit-id>d#egg=yamldecoder
 ```
 
 ## How To Use
