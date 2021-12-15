@@ -1,0 +1,26 @@
+name: Build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9"]
+    name: Python ${{ matrix.python-version }} Build
+    steps:
+      - name: Set Up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install pipenv
+        run: python -m pip install --upgrade pipenv wheel
+      - name: Install requirements
+        run: pipenv install --dev
+      - name: Lint Python with pylint
+        run: pipenv run pylint $(git ls-files '*.py')
+      - name: Check Python with black
+        run: pipenv run black --check .
+      - name: Test
+        run: pipenv run pytest
