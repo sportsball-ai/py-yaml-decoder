@@ -15,5 +15,5 @@ setup(
     long_description_content_type="text/markdown",
     author="Tempus Ex Machina",
     install_requires=["pyyaml"],
-    python_requires=">=3.8",
+    python_requires=">=3.7",
 )
