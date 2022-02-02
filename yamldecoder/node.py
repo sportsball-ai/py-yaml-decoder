@@ -1,8 +1,8 @@
-from typing import Union, get_origin, get_args
+from typing import Union
 
 
 def is_optional(field):
-    return get_origin(field) is Union and type(None) in get_args(field)
+    return field.__origin__ is Union and type(None) in field.__args__
 
 
 class Node:
