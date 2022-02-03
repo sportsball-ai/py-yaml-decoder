@@ -1,4 +1,4 @@
-# YamlDecoder
+# YamlDecoder :goggles:
 
 This is a simple python package to decode yaml files into dataclasses with type check.
 
