@@ -8,11 +8,11 @@ This works similarly to the [yaml decoder](https://pkg.go.dev/gopkg.in/yaml.v2) 
 
 Run this commmand in any python project you are working on (as long as it uses pipenv):
 
-```bash
+```shell
 # for a specific commit version
-pipenv install -e git+https://github.com/sportsball-ai/py-yaml-decoder.git@<commit-id>d#egg=yamldecoder
+pipenv install -e git+https://github.com/sportsball-ai/py-yaml-decoder.git@<commit-id>#egg=yamldecoder
 # for the latest version
-pipenv install -e git+https://github.com/sportsball-ai/py-yaml-decoderd#egg=yamldecoder
+pipenv install -e git+https://github.com/sportsball-ai/py-yaml-decoder#egg=yamldecoder
 ```
 
 ## Using The Decoder
