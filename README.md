@@ -12,7 +12,7 @@ Run this commmand in any python project you are working on (as long as it uses p
 # for a specific commit version
 pipenv install -e git+https://github.com/sportsball-ai/py-yaml-decoder.git@<commit-id>d#egg=yamldecoder
 # for the latest version
-pipenv install -e git+https://github.com/sportsball-ai/py-yaml-decoderd#egg=yamldecoder
+pipenv install -e git+https://github.com/sportsball-ai/py-yaml-decoder#egg=yamldecoder
 ```
 
 ## Using The Decoder
